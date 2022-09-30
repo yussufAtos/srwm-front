@@ -1,0 +1,28 @@
+@use '@angular/material' as mat;
+
+.container {
+  display: flex;
+  padding: 0.75rem;
+  border-radius: 0.125rem;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 1536px;
+  @include mat.elevation(3);
+
+  .validate {
+    display: flex;
+    justify-content: center;
+  }
+
+  .transition-workflow-container {
+    border-top: 1px solid lightgray;
+    padding: 0.5em;
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      flex-basis: 100%;
+    }
+  }
+}

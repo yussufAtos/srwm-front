@@ -1,0 +1,24 @@
+<label
+  class="mat-focus-indicator mat-button mat-button-base mat-primary mat-raised-button"
+  color="primary"
+>
+  Choose AMP
+  <input
+    hidden
+    name="webstory-zip"
+    type="file"
+    class="opacity-0"
+    (change)="onFileChange($any($event).target.files[0])"
+    accept=".zip"
+    #input
+  />
+</label>
+
+<ng-container *ngIf="uploadProgress$ | async as uploadProgress">
+  <mat-progress-bar
+    class="progress-bar"
+    mode="determinate"
+    [value]="uploadProgress"
+  >
+  </mat-progress-bar>
+</ng-container>

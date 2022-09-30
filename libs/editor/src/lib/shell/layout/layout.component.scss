@@ -1,0 +1,16 @@
+:host {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* Optional */
+main {
+  margin: 2% auto;
+  /* or: align-self: center */
+  // max-width: 80ch;
+}

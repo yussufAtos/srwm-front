@@ -1,0 +1,22 @@
+<div [formGroup]="mediatopicsForm" class="mediatopics-container">
+  <span class="mediatopics">
+    <ng-select
+      placeholder="Select mediatopics"
+      mediatopics
+      [multiple]="true"
+      formControlName="mediatopics"
+      (add)="addKeywordsOf($event)"
+      (remove)="removeKeywordsOf($event.value)"
+      (clear)="removeAllKeywords()"
+      appearance="outlined"
+    ></ng-select>
+  </span>
+  <span>
+    <ng-select
+      class="item"
+      formControlName="keywords"
+      [multiple]="true"
+      placeholder="Keyword list"
+    ></ng-select>
+  </span>
+</div>

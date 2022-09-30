@@ -1,0 +1,57 @@
+<div *ngIf="webstory" class="webstory-container">
+  <h1 *ngIf="webstory.headline" class="headline">{{ webstory.headline }}</h1>
+  <div class="data">
+    <mat-chip-list>
+      <mat-chip class="language">
+        {{ webstory.language }}
+      </mat-chip>
+      <mat-chip *ngIf="webstory.pubStatus === 'CANCELED'" class="pubStatus"
+        >Killed</mat-chip
+      >
+      <ng-container *ngIf="webstory.signals.length > 0">
+        <div class="signals" *ngFor="let signal of webstory.signals">
+          <mat-chip [ngClass]="'signal-' + signal">{{ signal }}</mat-chip>
+        </div>
+      </ng-container>
+
+      <mat-chip *ngIf="webstory.version" class="version">
+        Version {{ webstory.version }}
+      </mat-chip>
+    </mat-chip-list>
+
+    <span *ngIf="webstory.versionCreated" class="date">
+      {{ webstory.versionCreated | date: 'medium' }}
+    </span>
+  </div>
+
+  <div class="content">
+    <div>
+      <span class="guid"> GUID : {{ webstory.guid }}</span>
+      <button
+        mat-icon-button
+        [cdkCopyToClipboard]="webstory.guid"
+        aria-label="copy"
+        title="Copy to clipboard"
+      >
+        <mat-icon aria-label="copy"> content_copy </mat-icon>
+      </button>
+    </div>
+    <div class="poster">
+      <img
+        *ngIf="webstory.posterUrl"
+        [src]="webstory.posterUrl"
+        [alt]="webstory.headline"
+      />
+    </div>
+
+    <p *ngIf="webstory.catchline" class="title catchline">
+      <span i18n="@@WebstoryFullView.catchline.label">Catchline :</span>
+      {{ webstory.catchline }}
+    </p>
+
+    <span *ngIf="webstory.edNote">
+      <p i18n="@@WebstoryFullView.editorialNote.label">Editorial note :</p>
+      <p class="mat-body">{{ webstory.edNote }}</p>
+    </span>
+  </div>
+</div>

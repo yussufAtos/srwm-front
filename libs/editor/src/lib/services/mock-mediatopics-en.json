@@ -1,0 +1,257 @@
+[
+  {
+    "names": {
+      "en": "arts, culture and entertainment"
+    },
+    "keywords": {
+      "en": []
+    },
+    "lang": "en",
+    "label": "arts, culture and entertainment",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/01000000",
+    "id": "medtop01000000",
+    "status": "VALID",
+    "trigraph": "CLT"
+  },
+  {
+    "names": {
+      "en": "conflicts, war and peace"
+    },
+    "keywords": {
+      "en": []
+    },
+    "lang": "en",
+    "label": "conflicts, war and peace",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/16000000",
+    "id": "medtop16000000",
+    "status": "VALID",
+    "trigraph": "UNR"
+  },
+  {
+    "names": {
+      "en": "crime, law and justice"
+    },
+    "keywords": {
+      "en": []
+    },
+    "lang": "en",
+    "label": "crime, law and justice",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/02000000",
+    "id": "medtop02000000",
+    "status": "VALID",
+    "trigraph": "CLJ"
+  },
+  {
+    "names": {
+      "en": "disaster and accident"
+    },
+    "keywords": {
+      "en": []
+    },
+    "lang": "en",
+    "label": "disaster and accident",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/03000000",
+    "id": "medtop03000000",
+    "status": "VALID",
+    "trigraph": "DIS"
+  },
+  {
+    "names": {
+      "en": "economy, business and finance"
+    },
+    "keywords": {
+      "en": []
+    },
+    "lang": "en",
+    "label": "economy, business and finance",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/04000000",
+    "id": "medtop04000000",
+    "status": "VALID",
+    "trigraph": "ECO"
+  },
+  {
+    "names": {
+      "en": "education"
+    },
+    "keywords": {
+      "en": ["education"]
+    },
+    "lang": "en",
+    "label": "education",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/05000000",
+    "id": "medtop05000000",
+    "status": "VALID",
+    "trigraph": "EDU"
+  },
+  {
+    "names": {
+      "en": "environment"
+    },
+    "keywords": {
+      "en": ["environment"]
+    },
+    "lang": "en",
+    "label": "environment",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/06000000",
+    "id": "medtop06000000",
+    "status": "VALID",
+    "trigraph": "ENV"
+  },
+  {
+    "names": {
+      "en": "health"
+    },
+    "keywords": {
+      "en": ["health"]
+    },
+    "lang": "en",
+    "label": "health",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/07000000",
+    "id": "medtop07000000",
+    "status": "VALID",
+    "trigraph": "HTH"
+  },
+  {
+    "names": {
+      "en": "human interest"
+    },
+    "keywords": {
+      "en": []
+    },
+    "lang": "en",
+    "label": "human interest",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/08000000",
+    "id": "medtop08000000",
+    "status": "VALID",
+    "trigraph": "HUM"
+  },
+  {
+    "names": {
+      "en": "labour"
+    },
+    "keywords": {
+      "en": ["labour"]
+    },
+    "lang": "en",
+    "label": "labour",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/09000000",
+    "id": "medtop09000000",
+    "status": "VALID",
+    "trigraph": "SOC"
+  },
+  {
+    "names": {
+      "en": "lifestyle and leisure"
+    },
+    "keywords": {
+      "en": ["lifestyle"]
+    },
+    "lang": "en",
+    "label": "lifestyle and leisure",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/10000000",
+    "id": "medtop10000000",
+    "status": "VALID",
+    "trigraph": "LIF"
+  },
+  {
+    "names": {
+      "en": "politics"
+    },
+    "keywords": {
+      "en": ["politics"]
+    },
+    "lang": "en",
+    "label": "politics",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/11000000",
+    "id": "medtop11000000",
+    "status": "VALID",
+    "trigraph": "POL"
+  },
+  {
+    "names": {
+      "en": "religion and belief"
+    },
+    "keywords": {
+      "en": ["religion"]
+    },
+    "lang": "en",
+    "label": "religion and belief",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/12000000",
+    "id": "medtop12000000",
+    "status": "VALID",
+    "trigraph": "REL"
+  },
+  {
+    "names": {
+      "en": "science and technology"
+    },
+    "keywords": {
+      "en": ["science"]
+    },
+    "lang": "en",
+    "label": "science and technology",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/13000000",
+    "id": "medtop13000000",
+    "status": "VALID",
+    "trigraph": "SCI"
+  },
+  {
+    "names": {
+      "en": "social issues"
+    },
+    "keywords": {
+      "en": ["social"]
+    },
+    "lang": "en",
+    "label": "social issues",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/14000000",
+    "id": "medtop14000000",
+    "status": "VALID",
+    "trigraph": "SOI"
+  },
+  {
+    "names": {
+      "en": "sport"
+    },
+    "keywords": {
+      "en": []
+    },
+    "lang": "en",
+    "label": "sport",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/15000000",
+    "id": "medtop15000000",
+    "status": "VALID",
+    "trigraph": "SPO"
+  },
+  {
+    "names": {
+      "en": "weather"
+    },
+    "keywords": {
+      "en": ["weather"]
+    },
+    "lang": "en",
+    "label": "weather",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/17000000",
+    "id": "medtop17000000",
+    "status": "VALID",
+    "trigraph": "WEA"
+  }
+]

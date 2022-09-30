@@ -1,0 +1,64 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@mixin theme($theme) {
+  $color-config: mat.get-color-config($theme);
+  @if $color-config != null {
+    @include color($theme);
+  }
+
+  $typography-config: mat.get-typography-config($theme);
+  @if $typography-config!=null {
+    @include typography($theme);
+  }
+}
+
+@mixin color($theme) {
+  $color-config: mat.get-color-config($theme);
+  //$primary-palette: map.get($color-config, 'primary');
+
+  $primary: map.get($color-config, primary);
+  $accent: map.get($color-config, accent);
+  $warn: map.get($color-config, warn);
+
+  .afp-shared-instructions-banner {
+    @include _theme-property($theme, 'color', default-contrast);
+    @include _theme-property($theme, 'background-color', default);
+  }
+
+  // .instructions-text {
+  //   // Read the 500 hue from the primary color palette.
+  //   background-color: mat.get-color-from-palette($primary-palette, 500);
+  // }
+}
+
+// Applies a property to an mat-button element for each of the supported palettes.
+@mixin _theme-property($theme, $property, $hue) {
+  $primary: map.get($theme, primary);
+  $accent: map.get($theme, accent);
+  $warn: map.get($theme, warn);
+  $background: map.get($theme, background);
+  $foreground: map.get($theme, foreground);
+
+  &.mat-primary {
+    #{$property}: mat.get-color-from-palette($primary, $hue);
+  }
+  &.mat-accent {
+    #{$property}: mat.get-color-from-palette($accent, $hue);
+  }
+  &.mat-warn {
+    #{$property}: mat.get-color-from-palette($warn, $hue);
+  }
+}
+
+@mixin typography($theme) {
+  // Get the typography config from the theme.
+  $typography-config: mat.get-typography-config($theme);
+  &.instructions-text {
+    font: {
+      family: mat.font-family($typography-config);
+      size: mat.font-size($typography-config);
+      weight: mat.font-weight($typography-config, 800);
+    }
+  }
+}

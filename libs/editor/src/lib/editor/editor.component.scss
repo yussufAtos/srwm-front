@@ -1,0 +1,55 @@
+@use '@angular/material' as mat;
+
+.container {
+  padding: 0.75em;
+  @include mat.elevation(3);
+
+  .container-amp {
+    padding: 0.75em;
+    margin-top: 0.25rem;
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .webstory-poster > img,
+    .placeholder-poster > * {
+      border: 2px solid lightgray;
+      max-height: calc(928px / 2);
+      max-width: calc(696px / 2);
+      height: calc(928px / 2);
+      width: calc(696px / 2);
+    }
+
+    .error-panel {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .container-form {
+    padding: 0.75em;
+    margin: 0.5em;
+    .grid {
+      grid-auto-flow: row dense;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      column-gap: 0.5rem;
+      display: grid;
+
+      .language {
+        grid-column: span 1 / span 1;
+      }
+      .headline {
+        grid-column: span 5 / span 5;
+      }
+
+      .full {
+        grid-column: span 6 / span 6;
+      }
+    }
+  }
+  .container-transition {
+    display: flex;
+  }
+}

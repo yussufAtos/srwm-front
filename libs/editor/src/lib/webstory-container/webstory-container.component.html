@@ -1,0 +1,8 @@
+<ng-container *ngIf="document$ | async as webstory">
+  <div class="container">
+    <webstory-full-view [webstory]="webstory"></webstory-full-view>
+    <div class="buttons">
+      <button mat-raised-button [routerLink]="['../../']">Back to home</button>
+    </div>
+  </div>
+</ng-container>

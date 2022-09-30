@@ -1,0 +1,25 @@
+<ng-container *ngIf="document$ | async as webstory">
+  <div class="container">
+    <webstory-full-view [webstory]="webstory"></webstory-full-view>
+
+    <ng-container *ngIf="error$ | async as error">
+      <afp-shared-instructions-banner
+        [message]="error.message"
+        [title]="error.title"
+        color="warn"
+      ></afp-shared-instructions-banner>
+    </ng-container>
+
+    <div class="button-list">
+      <button mat-raised-button [routerLink]="['../']">Cancel</button>
+      <button
+        mat-button
+        mat-raised-button
+        color="primary"
+        (click)="depublishWebstory(webstory.guid)"
+      >
+        <span>Depublish</span>
+      </button>
+    </div>
+  </div>
+</ng-container>

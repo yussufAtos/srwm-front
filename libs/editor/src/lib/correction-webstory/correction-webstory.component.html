@@ -1,0 +1,17 @@
+<webstory-editor
+  *ngIf="document$"
+  [webstory]="document$ | async"
+  [template]="transitions"
+  (formSubmit)="correctionWebStory($event)"
+  [error]="error$ | async"
+  [formTitle]="title"
+></webstory-editor>
+
+<ng-template #transitions let-form="form" let-disabled="disabled">
+  <button mat-button color="warn" type="button" [routerLink]="['/navigations']">
+    Cancel
+  </button>
+  <button mat-button type="submit" [disabled]="form.invalid || submitDisabled">
+    {{ labelButton }}
+  </button>
+</ng-template>

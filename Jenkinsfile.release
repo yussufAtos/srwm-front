@@ -1,0 +1,69 @@
+@Library('srfm') _
+
+NODEJS = "NodeJS_16.14.0"
+ENVIRONMENTS = [
+        dev: [channel: '40789', view: '150'],
+]
+def getRPMPath() {
+    return sh(script: "ls -rt ${WORKSPACE}/dist/rpm/apps/webstory/noarch/webstory-frontend-*.noarch.rpm | tail -1", returnStdout: true).trim()
+}
+
+pipeline {
+    agent { label "${helper.DEFAULT_NODE}" }
+    parameters {
+        choice(name: 'APP', choices: ['webstory'], description: "Choisir l'application")
+        choice(name: 'VERSION', choices: ['patch', 'minor', 'major'], description: 'Choisir le type de version')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                deleteDir()
+                checkout scm
+                sh("git checkout ${GIT_BRANCH }")
+            }
+        }
+
+        stage('Dependencies') {
+            steps {
+                echo 'Retrieve dependencies...'
+                nodejs(nodeJSInstallationName: "${NODEJS}") {
+                    sh('npm ci')
+                }
+            }
+        }
+
+        stage('Rpm') {
+            when {
+                anyOf {
+                    branch 'master'
+                }
+            }
+            steps {
+                echo 'Build rpm...'
+                nodejs(nodeJSInstallationName: "${NODEJS}") {
+                  sh("npx nx run webstory:rpm")
+                }
+              script {
+                RPM_FILE = getRPMPath()
+                signRPM "$RPM_FILE"
+              }
+              archiveArtifacts artifacts: '**/dist/rpm/apps/**/*.rpm', fingerprint: true
+          }
+        }
+
+        stage('Send rpm to satellite') {
+            when {
+                anyOf {
+                    branch 'master'
+                }
+            }
+            steps {
+                echo 'Send rpm to Redhat satellite...'
+                 script {
+                     sendRPMToSatellite rpmFile: "${RPM_FILE}", targetChannel: "${ENVIRONMENTS.dev.channel}", targetView: "${ENVIRONMENTS.dev.view}"
+                 }
+            }
+        }
+    }
+}

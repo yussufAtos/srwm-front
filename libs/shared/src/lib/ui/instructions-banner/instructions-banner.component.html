@@ -1,0 +1,8 @@
+<div class="instructions-box" *ngIf="title || message">
+  <div class="instructions-text" [ngClass]="{ uppercase: uppercase }">
+    <h1 class="instructions mat-title" *ngIf="title">{{ title }}</h1>
+  </div>
+  <div class="body" *ngIf="message">
+    {{ message }}
+  </div>
+</div>

@@ -1,0 +1,257 @@
+[
+  {
+    "names": {
+      "fr": "Arts, culture et divertissement"
+    },
+    "keywords": {
+      "fr": []
+    },
+    "lang": "fr",
+    "label": "Arts, culture et divertissement",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/01000000",
+    "id": "medtop01000000",
+    "status": "VALID",
+    "trigraph": "CLT"
+  },
+  {
+    "names": {
+      "fr": "Conflits, guerres et paix"
+    },
+    "keywords": {
+      "fr": []
+    },
+    "lang": "fr",
+    "label": "Conflits, guerres et paix",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/16000000",
+    "id": "medtop16000000",
+    "status": "VALID",
+    "trigraph": "UNR"
+  },
+  {
+    "names": {
+      "fr": "Criminalité, droit et justice"
+    },
+    "keywords": {
+      "fr": []
+    },
+    "lang": "fr",
+    "label": "Criminalité, droit et justice",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/02000000",
+    "id": "medtop02000000",
+    "status": "VALID",
+    "trigraph": "CLJ"
+  },
+  {
+    "names": {
+      "fr": "Désastres et accidents"
+    },
+    "keywords": {
+      "fr": []
+    },
+    "lang": "fr",
+    "label": "Désastres et accidents",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/03000000",
+    "id": "medtop03000000",
+    "status": "VALID",
+    "trigraph": "DIS"
+  },
+  {
+    "names": {
+      "fr": "Economie et finances"
+    },
+    "keywords": {
+      "fr": []
+    },
+    "lang": "fr",
+    "label": "Economie et finances",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/04000000",
+    "id": "medtop04000000",
+    "status": "VALID",
+    "trigraph": "ECO"
+  },
+  {
+    "names": {
+      "fr": "Education"
+    },
+    "keywords": {
+      "fr": ["éducation"]
+    },
+    "lang": "fr",
+    "label": "Education",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/05000000",
+    "id": "medtop05000000",
+    "status": "VALID",
+    "trigraph": "EDU"
+  },
+  {
+    "names": {
+      "fr": "Environnement"
+    },
+    "keywords": {
+      "fr": ["environnement"]
+    },
+    "lang": "fr",
+    "label": "Environnement",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/06000000",
+    "id": "medtop06000000",
+    "status": "VALID",
+    "trigraph": "ENV"
+  },
+  {
+    "names": {
+      "fr": "Gens animaux insolite"
+    },
+    "keywords": {
+      "fr": []
+    },
+    "lang": "fr",
+    "label": "Gens animaux insolite",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/08000000",
+    "id": "medtop08000000",
+    "status": "VALID",
+    "trigraph": "HUM"
+  },
+  {
+    "names": {
+      "fr": "Météo"
+    },
+    "keywords": {
+      "fr": ["météo"]
+    },
+    "lang": "fr",
+    "label": "Météo",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/17000000",
+    "id": "medtop17000000",
+    "status": "VALID",
+    "trigraph": "WEA"
+  },
+  {
+    "names": {
+      "fr": "Politique"
+    },
+    "keywords": {
+      "fr": ["politique"]
+    },
+    "lang": "fr",
+    "label": "Politique",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/11000000",
+    "id": "medtop11000000",
+    "status": "VALID",
+    "trigraph": "POL"
+  },
+  {
+    "names": {
+      "fr": "Religion et croyance"
+    },
+    "keywords": {
+      "fr": ["religion"]
+    },
+    "lang": "fr",
+    "label": "Religion et croyance",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/12000000",
+    "id": "medtop12000000",
+    "status": "VALID",
+    "trigraph": "REL"
+  },
+  {
+    "names": {
+      "fr": "Santé"
+    },
+    "keywords": {
+      "fr": ["santé"]
+    },
+    "lang": "fr",
+    "label": "Santé",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/07000000",
+    "id": "medtop07000000",
+    "status": "VALID",
+    "trigraph": "HTH"
+  },
+  {
+    "names": {
+      "fr": "Science et technologie"
+    },
+    "keywords": {
+      "fr": ["sciences"]
+    },
+    "lang": "fr",
+    "label": "Science et technologie",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/13000000",
+    "id": "medtop13000000",
+    "status": "VALID",
+    "trigraph": "SCI"
+  },
+  {
+    "names": {
+      "fr": "Social"
+    },
+    "keywords": {
+      "fr": ["social"]
+    },
+    "lang": "fr",
+    "label": "Social",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/09000000",
+    "id": "medtop09000000",
+    "status": "VALID",
+    "trigraph": "SOC"
+  },
+  {
+    "names": {
+      "fr": "Société"
+    },
+    "keywords": {
+      "fr": ["société"]
+    },
+    "lang": "fr",
+    "label": "Société",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/14000000",
+    "id": "medtop14000000",
+    "status": "VALID",
+    "trigraph": "SOI"
+  },
+  {
+    "names": {
+      "fr": "Sport"
+    },
+    "keywords": {
+      "fr": []
+    },
+    "lang": "fr",
+    "label": "Sport",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/15000000",
+    "id": "medtop15000000",
+    "status": "VALID",
+    "trigraph": "SPO"
+  },
+  {
+    "names": {
+      "fr": "Vie quotidienne et loisirs"
+    },
+    "keywords": {
+      "fr": ["loisirs"]
+    },
+    "lang": "fr",
+    "label": "Vie quotidienne et loisirs",
+    "referentialType": "MEDIA_TOPICS",
+    "uri": "http://cv.iptc.org/newscodes/mediatopic/10000000",
+    "id": "medtop10000000",
+    "status": "VALID",
+    "trigraph": "LIF"
+  }
+]

@@ -1,0 +1,14 @@
+@use '@angular/material' as mat;
+
+.container {
+  padding: 0.75em;
+  @include mat.elevation(3);
+
+  .button-list {
+    padding-top: 0.25em;
+    border-top-width: 2px;
+    gap: 0.5rem;
+    justify-content: space-between;
+    display: flex;
+  }
+}

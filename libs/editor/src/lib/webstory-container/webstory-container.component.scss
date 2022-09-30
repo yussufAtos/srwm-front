@@ -1,0 +1,23 @@
+@use '@angular/material' as mat;
+
+:host {
+  max-width: 33%;
+  margin-top: 50px;
+  min-width: 500px;
+  min-height: auto;
+  display: block;
+
+  ::ng-deep .mat-chip.mat-standard-chip::after {
+    background: none !important;
+  }
+
+  .container {
+    padding: 0.75em;
+    @include mat.elevation(3);
+
+    .buttons {
+      border-top: 1px solid rgb(229, 231, 235);
+      padding-top: 0.25rem;
+    }
+  }
+}

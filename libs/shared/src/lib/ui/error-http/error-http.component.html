@@ -1,0 +1,6 @@
+<div class="content">
+  <h1 class="headline" *ngIf="errorCode">{{ errorCode }}</h1>
+  <h2 class="title">{{ title }}</h2>
+  <p class="body-1 message" *ngIf="message">{{ message }}</p>
+  <button mat-stroked-button [routerLink]="[linkRedirect]">Back to home</button>
+</div>

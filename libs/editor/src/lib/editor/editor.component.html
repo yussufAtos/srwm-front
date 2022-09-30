@@ -1,0 +1,129 @@
+<div class="container">
+  <h1>{{ formTitle }}</h1>
+
+  <h2 *ngIf="guid">GUID: {{ guid }}</h2>
+  <div *ngIf="errorUploadZip">
+    <afp-shared-instructions-banner
+      [message]="errorUploadZip"
+      color="warn"
+    ></afp-shared-instructions-banner>
+  </div>
+
+  <webstory-zip-upload
+    (uploadFinished)="uploadOver($event)"
+    (errors)="onErrorsUploadZip($event)"
+  ></webstory-zip-upload>
+
+  <div class="container-amp">
+    <div *ngIf="iconUrl; else placeholder" class="webstory-poster">
+      <img [src]="iconUrl" alt="poster" #poster />
+    </div>
+
+    <ng-container
+      *ngIf="
+        poster &&
+        (poster.nativeElement.naturalWidth !== 696 ||
+          poster.nativeElement.naturalHeight !== 928)
+      "
+    >
+      <afp-shared-instructions-banner
+        i18n-message="@@EditorComponent.posterWarningRecommended"
+        message="Recommended dimensions for poster are 696*928. They are actually {{
+          poster.nativeElement.naturalWidth
+        }}*{{ poster.nativeElement.naturalHeight }}"
+        color="warn"
+        class="error-panel"
+      ></afp-shared-instructions-banner>
+    </ng-container>
+
+    <!-- <div
+      class="webstory-iframe w-2/3 bg-clip-border border-4 border-dashed border-blue-500 mx-auto"
+    >
+      <iframe
+        *ngIf="webstoryUrl && false; else placeholder"
+        [src]="webstoryUrl | sanitizedUrl"
+        title="webstory"
+        class="h-[32rem]"
+      ></iframe>
+    </div> -->
+  </div>
+
+  <div class="container-form">
+    <form [formGroup]="form" class="grid" (ngSubmit)="submit()">
+      <div
+        class="full"
+        *ngIf="
+          form?.invalid &&
+          form.errors?.['zipNotChanged']
+        "
+      >
+        <afp-shared-instructions-banner
+          i18n-message="@@EditorComponent.zipNotChanged"
+          message="In the kill process, the zip must be modified."
+          color="warn"
+        ></afp-shared-instructions-banner>
+      </div>
+
+      <div class="language">
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Language</mat-label>
+          <input
+            matInput
+            formControlName="language"
+            required
+            [readonly]="true"
+          />
+        </mat-form-field>
+      </div>
+      <div class="headline">
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Headline</mat-label>
+          <input
+            matInput
+            formControlName="headline"
+            required
+            [readonly]="true"
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="full">
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Catchline</mat-label>
+          <textarea matInput formControlName="catchline"></textarea>
+        </mat-form-field>
+      </div>
+      <div class="full">
+        <ng-select
+          mediatopics
+          formControlName="mediatopics"
+          [selectedLang]="langValue"
+        ></ng-select>
+      </div>
+      <div class="full">
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Editorial note</mat-label>
+          <textarea matInput formControlName="edNote"></textarea>
+        </mat-form-field>
+      </div>
+      <div class="full" *ngIf="error">
+        <afp-shared-instructions-banner
+          [message]="error.message"
+          [title]="error.title"
+          color="warn"
+        ></afp-shared-instructions-banner>
+      </div>
+      <div class="container-transition">
+        <ng-container
+          *ngTemplateOutlet="template; context: { disabled: false, form: form }"
+        >
+        </ng-container>
+      </div>
+    </form>
+  </div>
+</div>
+
+<ng-template #placeholder>
+  <div class="container-link placeholder-poster">
+    <div></div></div
+></ng-template>

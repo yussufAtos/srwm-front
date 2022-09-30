@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "projects": {
+    "editor": "libs/editor",
+    "iris-uri": "libs/iris-uri",
+    "shared": "libs/shared",
+    "webstory": "apps/webstory",
+    "webstory-e2e": "apps/webstory-e2e"
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
+}

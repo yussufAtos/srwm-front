@@ -1,0 +1,35 @@
+{
+  "guid": "urn:newsml:libg2.afp.com:20220704:86ed1bcc-3a7c-451b-83d1-3421681af8d8",
+  "version": 1,
+  "era": 2,
+  "metadataLanguage": "fr",
+  "itemClass": "http://cv.afp.com/itemnatures/webStory",
+  "provider": {
+    "uri": "http://cv.iptc.org/newscodes/newsprovider/AFP"
+  },
+  "versionCreated": "2022-07-04T15:52:31Z",
+  "pubStatus": "http://cv.iptc.org/newscodes/pubstatusg2/usable",
+  "generators": [
+    {
+      "name": "libg2",
+      "versionInfo": "libg2 3.10.0",
+      "role": "http://cv.afp.com/generatorrole/libg2"
+    }
+  ],
+  "icons": [
+    {
+      "rendition": "http://cv.iptc.org/newscodes/rendition/preview",
+      "href": "http://vspar-iris-d-wsback-31.afp.com:8585/components/57d99fdd07ff8d2f0a1e79826c78260dbdb083a2",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "urgency": 4,
+  "contentLanguage": "fr",
+  "headline": "Nouvelles grèves dans les aéroports français",
+  "remoteContents": [
+    {
+      "href": "http://vspar-iris-d-wsback-31.afp.com:8585/components/f2e30a752042868a044bdea5918ee0fc5a86dde1",
+      "contentType": "application/zip"
+    }
+  ]
+}

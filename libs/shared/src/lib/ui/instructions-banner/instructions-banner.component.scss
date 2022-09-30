@@ -1,0 +1,21 @@
+@use '@angular/material' as mat;
+@use 'sass:map';
+
+:host {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.instructions-box {
+  color: #fff;
+  padding: 16px 24px 16px 16px;
+}
+
+.instructions-text {
+  position: relative;
+}
+
+.instructions {
+  //  @extend %body-small-bold;
+  letter-spacing: 0;
+}

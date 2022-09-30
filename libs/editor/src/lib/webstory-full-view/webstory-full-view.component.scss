@@ -1,0 +1,33 @@
+.webstory-container {
+  .metadatas {
+    padding-bottom: 0.5em;
+  }
+  img {
+    max-height: 70vh;
+  }
+
+  .data {
+    padding-bottom: 0.25rem;
+    border-bottom-width: 2px;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid rgb(229, 231, 235);
+  }
+
+  .content {
+    margin-top: 0.5em;
+  }
+  .poster {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .date {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

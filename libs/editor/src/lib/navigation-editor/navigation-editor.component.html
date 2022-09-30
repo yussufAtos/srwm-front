@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="validate">
+    <button
+      mat-button
+      mat-stroked-button
+      color="basic"
+      class="w-full"
+      [routerLink]="['../editor', 'create']"
+    >
+      Validate new story
+    </button>
+  </div>
+  <div class="transition-workflow-container">
+    <mat-form-field>
+      <mat-placeholder>GUID</mat-placeholder>
+      <input matInput type="text" [(ngModel)]="guid" #ctrl="ngModel" />
+    </mat-form-field>
+    <div class="buttons">
+      <button
+        [disabled]="!isClickable()"
+        mat-button
+        matSuffix
+        mat-raised-button
+        [routerLink]="['../editor', guid, 'edit']"
+        color="primary"
+      >
+        <span>Update story</span>
+      </button>
+
+      <button
+        [disabled]="!isClickable()"
+        mat-button
+        matSuffix
+        mat-raised-button
+        [routerLink]="['../editor', guid, 'correction']"
+        color="accent"
+      >
+        <span>Correct story</span>
+      </button>
+
+      <button
+        [disabled]="!isClickable()"
+        mat-button
+        matSuffix
+        mat-raised-button
+        [routerLink]="['../editor', guid, 'depublish']"
+        color="warn"
+      >
+        <span>Depublish story</span>
+      </button>
+      <button
+        [disabled]="!isClickable()"
+        mat-button
+        matSuffix
+        mat-raised-button
+        [routerLink]="['../editor', guid, 'kill']"
+        color="warn"
+      >
+        <span>Kill story</span>
+      </button>
+    </div>
+  </div>
+</div>

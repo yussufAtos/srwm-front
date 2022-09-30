@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/editor/src/lib/ui",
+  "sourceRoot": "libs/editor/src/lib/ui/src",
+  "prefix": "webstory",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/editor/src/lib/ui"],
+      "options": {
+        "jestConfig": "libs/editor/src/lib/ui/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/editor/src/lib/ui/src/**/*.ts",
+          "libs/editor/src/lib/ui/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

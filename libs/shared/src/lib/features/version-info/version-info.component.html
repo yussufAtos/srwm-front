@@ -1,0 +1,7 @@
+<ng-container *ngIf="versionFront$ | async as infoFront">
+  <div>{{ infoFront.name }} : {{ infoFront.version }}</div>
+</ng-container>
+
+<ng-container *ngIf="versionBack$ | async as infoBack">
+  <div>{{ infoBack.name }} : {{ infoBack.version }}</div>
+</ng-container>

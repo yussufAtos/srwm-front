@@ -1,0 +1,17 @@
+<webstory-editor
+  (formSubmit)="createWebstory($event)"
+  [template]="transitions"
+  [error]="error$ | async"
+  i18n-formTitle="@@CreateWebstoryComponent.title"
+  [formTitle]="'Validate a story'"
+>
+</webstory-editor>
+
+<ng-template #transitions let-form="form" let-disabled="disabled">
+  <button mat-button color="warn" type="button" [routerLink]="['/navigations']">
+    Cancel
+  </button>
+  <button mat-button type="submit" [disabled]="form.invalid || submitDisabled">
+    {{ labelButton }}
+  </button>
+</ng-template>
